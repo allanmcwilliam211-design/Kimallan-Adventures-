@@ -9,6 +9,81 @@
 <style>
 :root{color-scheme:dark;--bg:#070d1b;--panel:#101d35;--panel2:#142643;--line:#2a3b58;--ink:#f5f7ff;--muted:#a9b8d0;--cyan:#33e5e2;--purple:#a07cff;--green:#3ae4ac;--amber:#ffc46a;--pink:#ff799c;--blue:#6ea8ff;--orange:#ff8768}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;width:100%;overflow-x:hidden}body{font:15px/1.46 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(ellipse at 75% 0%,#242047 0%,transparent 42%),radial-gradient(ellipse at 0 33%,#092b3e 0%,transparent 39%),var(--bg);color:var(--ink)}button,input,textarea,select{font:inherit}button{touch-action:manipulation;cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}a{color:var(--cyan)}.shell{max-width:940px;margin:0 auto;padding:0 14px 100px}.hero{position:relative;margin:0 -14px 18px;min-height:174px;padding:24px 18px 16px;overflow:hidden;background:linear-gradient(120deg,#102445cc,#271744ee);border-bottom:1px solid #7d7acc4a}.hero svg{position:absolute;bottom:0;left:0;width:100%;height:120px;opacity:.37}.hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 80% 3%,#9c6dff44,transparent 43%)}.hero-content{position:relative;z-index:1}.eyebrow{color:var(--cyan);font-size:10px;letter-spacing:2px;font-weight:850}.brand{margin:8px 0 5px;font-size:clamp(24px,7vw,34px);line-height:1.08;letter-spacing:-.9px;font-weight:950;text-shadow:0 0 20px #956cff45}.tag{font-size:12px;color:#c3cbe1;max-width:28em}.topline{display:flex;justify-content:space-between;align-items:center;gap:10px}.chip{display:inline-flex;align-items:center;gap:5px;border:1px solid #5288ac65;border-radius:100px;padding:6px 9px;font-size:11px;background:#102a43c9;color:#9fecef;white-space:nowrap}.sectiontop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:18px 2px 10px}.sectiontop h2{font-size:20px;margin:0}.sectiontop small,.sub{color:var(--muted);font-size:12px}.card{border:1px solid #8199d02a;border-radius:19px;padding:17px;background:linear-gradient(155deg,#172747e8,#0c182de8);box-shadow:0 10px 30px #00000022;margin-bottom:13px;min-width:0}.card p{margin:8px 0;color:var(--muted)}h1,h2,h3{line-height:1.2}h1{font-size:25px;margin:7px 0 10px}h3{font-size:17px;margin:0 0 8px}.muted{color:var(--muted)}.tiny{font-size:11px;color:#a3b7d0}.kicker{font-size:10px;color:#89a5cc;letter-spacing:1.7px;font-weight:800;text-transform:uppercase}.pill{display:inline-block;border:1px solid #50dcb36a;background:#12735342;color:#a0ffe0;font-size:10px;font-weight:850;padding:5px 9px;border-radius:30px}.row{display:flex;justify-content:space-between;align-items:center;gap:9px}.row.wrap{flex-wrap:wrap}.buttons{display:flex;gap:10px;flex-wrap:wrap}.btn{border:1px solid #bca7ff4d;border-radius:13px;padding:12px 15px;min-height:45px;background:linear-gradient(125deg,#6135e8,#9849df);box-shadow:0 7px 22px #5e30ba4a;color:white;font-weight:800}.btn.alt{background:#1a3150;border-color:#4e6686;box-shadow:none}.btn.danger{background:#622638;border-color:#ed7596;box-shadow:none}.btn.ghost{background:transparent;box-shadow:none;border-color:#4e6686}.btn.small{min-height:37px;padding:7px 10px;font-size:12px}.btn.fill{width:100%}.btn:active,.event:active{transform:scale(.98)}.metricgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.metric{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:15px 6px;border-radius:18px;border:1px solid #647cad34;background:linear-gradient(160deg,#152947,#10203a)}.ring{width:min(130px,100%);aspect-ratio:1;position:relative}.ring svg{display:block;width:100%;height:100%;transform:rotate(-90deg)}.ring .bgcircle{fill:none;stroke:#30415c;stroke-width:10}.ring .fgcircle{fill:none;stroke-width:10;stroke-linecap:round;transition:stroke-dashoffset .85s cubic-bezier(.24,.82,.26,1)}.ringval{position:absolute;inset:0;display:grid;place-items:center;font-size:26px;font-weight:900}.metric-label{font-size:12px;font-weight:780;max-width:130px;line-height:1.28}.alert{border-left:4px solid var(--amber);border-radius:13px;padding:13px;margin:12px 0;background:#4b342a88;color:#ffe7c6;font-weight:760;font-size:13px}.alert.purple{border-color:var(--purple);background:#392757aa}.eventgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.event{border:1px solid #647dad67;border-radius:17px;background:linear-gradient(145deg,#1b3255,#11233d);min-height:90px;padding:10px 7px;color:white;font-size:12px;font-weight:850;line-height:1.25}.event .emoji{display:block;font-size:29px;line-height:1.15;margin-bottom:7px}.divider{height:1px;background:#6985a238;margin:15px 0}.logitem{padding:10px 0;border-bottom:1px solid #7188ac33}.logitem:last-child{border-bottom:0}.logitem b{font-size:13px}.logmeta{font-size:11px;color:var(--muted);margin-top:3px}.lognote{font-size:12px;margin:6px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}.input,label{display:block;width:100%}label{font-weight:750;font-size:12px;color:#d9e3f2;margin:11px 0 5px}.input{min-height:43px;padding:11px 12px;border:1px solid #567396;border-radius:11px;background:#0c1c34;color:white;outline:none}.input:focus{border-color:#43d9e3;box-shadow:0 0 0 2px #43d9e323}textarea.input{min-height:85px;resize:vertical}select.input{appearance:auto}.nav{position:fixed;bottom:0;left:0;right:0;max-width:940px;margin:auto;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));padding:8px 5px calc(8px + env(safe-area-inset-bottom));gap:3px;background:#081528ee;backdrop-filter:blur(14px);border-top:1px solid #56749a66;z-index:30}.nav button{border:0;border-radius:12px;background:transparent;color:#c0cfeb;padding:8px 1px;font-size:10px;min-height:54px;min-width:0;font-weight:750}.nav button span{display:block;font-size:21px;margin-bottom:2px}.nav button[aria-current=page]{background:linear-gradient(135deg,#6640db,#a04af0);color:white;box-shadow:0 0 18px #8d4cf155}.empty{text-align:center;padding:28px 18px}.empty .big{font-size:42px}.score{font-weight:930;font-size:48px;color:var(--green);line-height:1.1}.stars{display:flex;gap:5px}.stars button{border:1px solid #6c7f9c;border-radius:10px;background:#1b2b48;color:#7f8ca7;padding:7px 0;min-width:0;flex:1;font-size:25px}.stars button.on{color:var(--amber);border-color:var(--amber);background:#493b3e}.achievement{display:flex;gap:12px;align-items:center}.achievement .em{font-size:29px}.achievement strong{display:block}.achievement p{font-size:12px;margin:3px 0}.progress{background:#30415c;border-radius:10px;height:7px;overflow:hidden;margin-top:8px}.progress div{height:100%;background:var(--purple);border-radius:10px}.chartwrap{height:230px;position:relative}.chartwrap canvas{width:100%!important;height:100%!important}.statusline{font-size:12px;color:#a6eadd}.modalback{position:fixed;inset:0;background:#030712dd;z-index:60;display:flex;align-items:center;justify-content:center;padding:16px}.modal{width:100%;max-width:530px;max-height:90dvh;overflow:auto;background:#142441;border:1px solid #7d69c680;border-radius:22px;padding:19px;box-shadow:0 22px 70px #000b}.modal h2{margin:0 0 13px;font-size:22px}.toast{position:fixed;bottom:calc(90px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:calc(100% - 28px);max-width:430px;border-radius:17px;z-index:75;padding:14px;text-align:center;background:linear-gradient(135deg,#291b54,#123750);border:1px solid #bb95ff;box-shadow:0 0 33px #814dffc0;font-weight:830;font-size:13px;animation:popin .23s ease-out}.toast .small{display:block;color:#78f6c6;font-size:11px;margin-top:6px}@keyframes popin{from{opacity:0;transform:translate(-50%,22px)}to{opacity:1;transform:translate(-50%,0)}}.fieldgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.bannersvg{height:33px;min-width:35px}.settingshint{background:#0c223b;border:1px solid #48789b55;border-radius:12px;padding:12px;font-size:12px;color:#c5d9ed}.settingshint code{overflow-wrap:anywhere}.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(min-width:700px){.shell{padding:0 24px 105px}.hero{margin:0 -24px 22px;padding:32px 26px;min-height:190px}.metricgrid{grid-template-columns:repeat(4,minmax(0,1fr))}.eventgrid{grid-template-columns:repeat(4,minmax(0,1fr))}.cols{display:grid;grid-template-columns:1.1fr .9fr;gap:15px}.cols>.card{margin-bottom:0}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* KIMALLAN MK II // Futuristic visual layer only. No mission or Firebase code is replaced. */
+:root{--bg:#040a14;--panel:#0b1d30;--panel2:#102a42;--line:#24536b;--cyan:#43e7fa;--purple:#9e82f9;--green:#46f0c2;--amber:#ffca7f;--blue:#6ebcfd}
+body{background:radial-gradient(ellipse at 100% -10%,#23234b 0%,transparent 36%),radial-gradient(ellipse at -30% 30%,#06425470 0%,transparent 45%),#040a14;background-attachment:fixed}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;background-image:linear-gradient(#307c9840 1px,transparent 1px),linear-gradient(90deg,#307c9830 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(to bottom,#0006,transparent 78%)}
+.hero{padding:25px 18px 19px;min-height:230px;border-bottom:1px solid #3deef280;background:radial-gradient(circle at 94% 4%,#3b337aa0,transparent 45%),linear-gradient(115deg,#071e36,#171638);box-shadow:inset 0 -6px 0 #42c8df15,0 6px 25px #0006}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 5px,#b3faff04 5px 6px);opacity:.55}
+.hero svg{opacity:.25}
+.hero:after{background:radial-gradient(circle at 82% 27%,#31f0ff1f,transparent 35%)}
+.hero-content:before{content:"";position:absolute;right:0;top:60px;width:110px;height:110px;pointer-events:none;opacity:.36;border:2px dashed #33e6f3;border-radius:50%;box-shadow:0 0 0 12px #23c2f516,0 0 0 24px #23c2f50d,inset 0 0 12px #37e9ff40;animation:ka-slowspin 28s linear infinite}
+.eyebrow{font-size:10px;color:#78f9ff;letter-spacing:2.1px;text-shadow:0 0 12px #00e3ff66}
+.brand{font-size:clamp(28px,7.5vw,40px);font-weight:950;line-height:1.08;letter-spacing:-1.25px;margin:15px 0 10px;max-width:80%;text-shadow:0 0 25px #0dd9ee40}
+.tag{font-size:12px;letter-spacing:.2px;max-width:24em;color:#b6d2e4}
+.mkii-strip{position:relative;display:flex;align-items:center;gap:10px;margin-top:19px;max-width:max-content;border:1px solid #30b8ca55;border-radius:9px;background:#071b31ce;padding:7px 9px;font-size:9px;font-weight:800;letter-spacing:1.05px;color:#95edfb}
+.mkii-strip .ka-led{display:inline-block;width:7px;height:7px;flex:0 0 auto;border-radius:100%;background:#49ffca;box-shadow:0 0 11px #49ffca;animation:ka-pulse 2.5s infinite}
+.mkii-strip .k-divider{width:1px;height:12px;background:#44849a}
+.chip{background:#081e32e8;color:#a7f7fa;border-color:#46bfe18a}
+#connection{font-weight:800;letter-spacing:1.2px;font-size:10px}
+#who{font-size:11px;color:#afdcf1}
+.card{border:1px solid #378caf47;border-radius:14px;background:linear-gradient(150deg,#102842e9,#091629ef);box-shadow:0 6px 24px #0007,inset 3px 0 0 #44d8f721}
+.card:has(.score),.card:has(.metricgrid){border-color:#55d8f855}
+.sectiontop h2{font-weight:870;letter-spacing:.05px}
+.sectiontop h2:before{content:"";display:inline-block;width:4px;height:19px;vertical-align:-3px;margin-right:9px;background:linear-gradient(#42ecff,#8a83ff);box-shadow:0 0 10px #41eaff99;border-radius:4px}
+.btn:not(.alt):not(.danger):not(.ghost){background:linear-gradient(111deg,#3259d9,#7846d8 70%,#9c49de);border-color:#60d5ed8c;box-shadow:0 5px 22px #3c64da44,inset 0 1px 0 #ffffff45}
+.btn{position:relative;overflow:hidden}
+.btn:not(.alt):not(.danger):not(.ghost):before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(120deg,transparent 10%,#fff2 50%,transparent 90%);transform:translateX(-130%);animation:ka-shine 6s ease-in-out infinite}
+.metric{background:linear-gradient(160deg,#0e2f49,#0a1d33);border-color:#3cb5db55;box-shadow:inset 0 0 14px #2bd4f00b}
+.metric-label{color:#c6edfa}
+.event{position:relative;background:linear-gradient(137deg,#102c48,#091a2e);border-color:#347f9b77;box-shadow:inset 3px 0 0 #42d2eb2b}
+.event:focus-visible{outline:2px solid #46eafa;outline-offset:2px}
+.event .emoji{filter:drop-shadow(0 0 8px #26f4ff30)}
+.nav{background:#06162bef;border-top:1px solid #4ccbec88;box-shadow:0 -7px 24px #0008}
+.nav button[aria-current=page]{background:linear-gradient(139deg,#245c8f,#6950bc);border:1px solid #55e2f08e;box-shadow:inset 0 1px 0 #ffffff40,0 0 19px #317fca55}
+.modal{background:linear-gradient(155deg,#112843,#0a1931);border-color:#48c3e47c}
+.input{background:#07182c;border-color:#437c9e}
+.alert.purple{background:#23325dba;border-color:#79b8ff}
+.toast{background:linear-gradient(135deg,#092d48,#242054);border-color:#4be8f0}
+@keyframes ka-slowspin{to{transform:rotate(360deg)}}
+@keyframes ka-pulse{0%,100%{opacity:1}50%{opacity:.36}}
+@keyframes ka-shine{0%,76%,100%{transform:translateX(-130%)}88%{transform:translateX(130%)}}
+/* 3.5-second classified launch animation (self-contained; not a video download) */
+#kaLaunch{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:max(18px,env(safe-area-inset-top)) 19px max(24px,env(safe-area-inset-bottom));background:radial-gradient(ellipse at 50% 40%,#102b44 0%,#060f21 56%,#02060f 100%);color:#e5faff;overflow:hidden;isolation:isolate}
+#kaLaunch[hidden]{display:none!important}
+#kaLaunch:before{content:"";position:absolute;inset:-20%;background-image:linear-gradient(#2b91b32b 1px,transparent 1px),linear-gradient(90deg,#2b91b32b 1px,transparent 1px);background-size:36px 36px;transform:perspective(400px) rotateX(19deg);opacity:.4}
+#kaLaunch:after{content:"";position:absolute;inset:-10%;pointer-events:none;background:linear-gradient(transparent 44%,#3beaf90c 50%,transparent 56%);animation:ka-scan 3s linear infinite}
+#kaLaunch.kaExit{animation:ka-vanish .45s ease-out forwards;pointer-events:none}
+.kaLaunchCore{position:relative;width:min(100%,440px);display:flex;flex-direction:column;align-items:center;text-align:center;z-index:2}
+.kaLaunchTop{font-size:10px;font-weight:900;letter-spacing:2.2px;color:#64eef8;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.kaLaunchTop:before,.kaLaunchTop:after{content:"";height:1px;width:26px;background:#39c9f4}
+.kaLaunchClearance{margin-top:11px;font-size:10px;letter-spacing:2px;color:#91acc1}
+.kaHud{position:relative;width:210px;height:210px;margin:22px 0 8px;display:grid;place-items:center}
+.kaHud svg{position:absolute;width:100%;height:100%;filter:drop-shadow(0 0 18px #00e5fa2e)}
+.kaHud .ring1{transform-origin:100px 100px;animation:ka-spin 8s linear infinite}
+.kaHud .ring2{transform-origin:100px 100px;animation:ka-spin 6s linear infinite reverse}
+.kaHud .kaSweep{transform-origin:100px 100px;animation:ka-spin 2.3s linear infinite;opacity:.75}
+.kaHudCenter{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #55def59c;border-radius:50%;background:#071a29dd;width:95px;height:95px;box-shadow:0 0 28px #3aeaff35,inset 0 0 24px #2dccef18}
+.kaHudCenter b{font-size:27px;font-weight:950;color:#eaffff;line-height:1}
+.kaHudCenter span{font-size:8px;color:#65e7fd;font-weight:900;letter-spacing:2px;margin-top:5px}
+.kaLaunchTitle{font-size:clamp(25px,6.7vw,34px);font-weight:950;letter-spacing:-1px;line-height:1.07;text-shadow:0 0 22px #2deaff66}
+.kaLaunchSubtitle{font-size:10px;font-weight:900;color:#89d4e3;letter-spacing:2.8px;margin-top:10px}
+.kaBootReadout{margin:23px 0 0;width:100%;max-width:370px;display:grid;gap:7px;text-align:left;font-size:11px;color:#afccdf;letter-spacing:.3px}
+.kaBootReadout div{display:flex;justify-content:space-between;gap:6px;border-bottom:1px solid #2f668044;padding-bottom:7px}
+.kaBootReadout b{color:#4bf5c7;font-weight:850;font-size:10px}
+.kaBootReadout .kaCaution{color:#ffce83}
+.kaLaunchBar{margin-top:22px;width:100%;max-width:370px;height:5px;background:#19374f;border-radius:6px;overflow:hidden;border:1px solid #4097b769}
+.kaLaunchBar>div{height:100%;width:0;background:linear-gradient(90deg,#4c9dff,#35f5ef,#b28cff);box-shadow:0 0 17px #3af9ef;animation:ka-load 3.05s ease-in-out forwards}
+.kaLaunchFooter{width:100%;max-width:370px;margin-top:12px;display:flex;justify-content:space-between;gap:8px;font-size:9px;color:#9bdfe7;letter-spacing:1px;font-weight:850}
+.kaSkip{position:absolute;right:18px;top:max(18px,env(safe-area-inset-top));border:1px solid #468da9;background:#102b40;color:#c4f6ff;border-radius:7px;padding:10px 13px;font-size:12px;font-weight:750;z-index:3;cursor:pointer}
+@keyframes ka-spin{to{transform:rotate(360deg)}}
+@keyframes ka-scan{0%{transform:translateY(-60%)}100%{transform:translateY(90%)}}
+@keyframes ka-load{0%{width:0}25%{width:17%}56%{width:56%}78%{width:76%}100%{width:100%}}
+@keyframes ka-vanish{to{opacity:0;visibility:hidden;transform:scale(1.025)}}
+@media(prefers-reduced-motion:reduce){.kaHud .ring1,.kaHud .ring2,.kaHud .kaSweep,.kaLaunchBar>div,#kaLaunch:after,.hero-content:before,.mkii-strip .ka-led,.btn:not(.alt):not(.danger):not(.ghost):before{animation:none!important}.kaLaunchBar>div{width:100%}}
+@media(max-width:370px){.brand{font-size:27px;max-width:90%}.kaHud{width:176px;height:176px;margin:14px 0 6px}.kaLaunchTitle{font-size:24px}.kaBootReadout{margin-top:15px}}
+
 </style>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js" defer></script>
 </head>
@@ -16,13 +91,64 @@
 <div class="shell" id="shell">
   <header class="hero">
     <svg viewBox="0 0 1100 270" preserveAspectRatio="none" aria-hidden="true"><path fill="#0a2340" d="M0 265 125 132 224 216 378 30 492 180 617 88 734 225 879 78 991 211 1100 135V270H0Z"/><path fill="#071527" d="M0 270 186 216 321 249 477 115 602 254 735 157 869 260 1003 186 1100 232V270H0Z"/></svg>
-    <div class="hero-content"><div class="topline"><div class="eyebrow">🏔️ CLASSIFIED EXPEDITION DIVISION</div><button class="chip" id="settingsOpen" title="Settings and private syncing">⚙️ Setup</button></div><div class="brand">KimAllan Adventures</div><div class="tag">Adventure HQ · Documenting questionable decisions since the last temporal disturbance</div></div>
+    <div class="hero-content"><div class="topline"><div class="eyebrow">🏔️ CLASSIFIED EXPEDITION DIVISION</div><button class="chip" id="settingsOpen" title="Settings and private syncing">⚙️ Setup</button></div><div class="brand">KimAllan Adventures</div><div class="tag">Adventure HQ · Documenting questionable decisions since the last temporal disturbance</div><div class="mkii-strip" aria-label="Mission control ready"><span class="ka-led"></span> EXPEDITION COMMAND <span class="k-divider"></span> MK II / SECURE LINK</div></div>
   </header>
   <div class="topline" style="padding:0 1px 10px"><span id="connection" class="statusline">● LOCAL TEST MODE</span><span id="who" class="tiny">Explorer: Allan</span></div>
   <main id="content" aria-live="polite"></main>
 </div>
 <nav class="nav" id="nav" aria-label="Main navigation"><button data-tab="mission"><span>🏠</span>Mission</button><button data-tab="events"><span>⚡</span>Events</button><button data-tab="trips"><span>🗺️</span>Trips</button><button data-tab="debrief"><span>📋</span>Debrief</button><button data-tab="awards"><span>🏆</span>Awards</button></nav>
 <div id="overlay"></div><div id="toastRoot" aria-live="polite"></div>
+
+<!-- Optional cinematic boot-up. Pure front-end animation; never touches cloud records. -->
+<div id="kaLaunch" role="presentation" aria-label="KimAllan Adventures mission control starting" hidden>
+  <button type="button" class="kaSkip" id="kaSkip">SKIP INTRO ↗</button>
+  <div class="kaLaunchCore">
+    <div class="kaLaunchTop">CLASSIFIED EXPEDITION DIVISION</div>
+    <div class="kaLaunchClearance">CLEARANCE: EXPLORER LEVEL 001 / 002</div>
+    <div class="kaHud" aria-hidden="true">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="87" stroke="#2d7b98" stroke-opacity=".48" stroke-width="2"/>
+        <circle class="ring1" cx="100" cy="100" r="78" stroke="#49dfff" stroke-width="5" stroke-dasharray="42 8 5 12 17 30 2 40"/>
+        <circle class="ring2" cx="100" cy="100" r="63" stroke="#ae91ff" stroke-width="2" stroke-dasharray="3 8 20 9 3 32"/>
+        <circle cx="100" cy="100" r="53" stroke="#24809b" stroke-width="1.5" stroke-dasharray="3 7"/>
+        <path d="M100 4V20M100 180V196M4 100H20M180 100H196" stroke="#5be5ff" stroke-width="2.5"/>
+        <path class="kaSweep" d="M100 100 L100 16 A84 84 0 0 1 184 100Z" fill="#54ecff" fill-opacity=".06" stroke="#54ecff" stroke-opacity=".3"/>
+      </svg>
+      <div class="kaHudCenter"><b>K<span style="color:#65e9f6">/</span>A</b><span>SYSTEMS</span></div>
+    </div>
+    <div class="kaLaunchTitle">KimAllan<br>Adventures</div>
+    <div class="kaLaunchSubtitle">MISSION CONTROL // INITIALIZING</div>
+    <div class="kaBootReadout" aria-hidden="true">
+      <div><span>EXPLORER IDENTIFICATION</span><b>VERIFIED</b></div>
+      <div><span>TEMPORAL INTEGRITY</span><b class="kaCaution">QUESTIONABLE</b></div>
+      <div><span>COMMON SENSE PROTOCOLS</span><b class="kaCaution">SUSPENDED</b></div>
+    </div>
+    <div class="kaLaunchBar" aria-hidden="true"><div></div></div>
+    <div class="kaLaunchFooter"><span>EXPLORERS ALLAN &amp; KIM</span><span id="kaBootText">SYSTEM BOOTING...</span></div>
+  </div>
+</div>
+<script>
+/* Splash is independent of Firebase; failure to load cloud never traps the user. */
+(function(){
+  var splash=document.getElementById('kaLaunch');
+  var skip=document.getElementById('kaSkip');
+  var label=document.getElementById('kaBootText');
+  var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var duration=reduced?650:3500;
+  var finished=false;
+  function dismiss(){
+    if(finished)return;finished=true;
+    if(label)label.textContent='MISSION CONTROL ONLINE';
+    splash.classList.add('kaExit');
+    setTimeout(function(){splash.hidden=true},reduced?50:460);
+  }
+  splash.hidden=false;
+  skip.addEventListener('click',dismiss);
+  setTimeout(function(){if(!finished&&label)label.textContent='CLEARANCE VERIFIED'},reduced?200:1800);
+  setTimeout(dismiss,duration);
+})();
+</script>
+
 <script type="module">
 import {initializeApp,getApps,getApp} from 'https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js';
 import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from 'https://www.gstatic.com/firebasejs/13.1.0/firebase-auth.js';
