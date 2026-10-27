@@ -1266,6 +1266,41 @@ body.ka-solaris .ka22-opening small{color:#426a82}
 @media(prefers-reduced-motion:reduce){.ka22-panel{backdrop-filter:none}}
 
 
+
+/* MK XXV: Expedition Tracking & Safety (styles scoped to Essentials) */
+.ka25-summary{border:1px solid #437c80;background:linear-gradient(115deg,#0d3437,#15364a);border-radius:14px;padding:13px;margin:12px 0;color:#eafff4}
+.ka25-kicker{font-size:10px;letter-spacing:1.5px;font-weight:900;color:#9ee9ce;text-transform:uppercase}
+.ka25-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:10px 0}
+.ka25-stat{border:1px solid #5896a15a;background:#0719227d;border-radius:10px;padding:10px 7px;text-align:center}
+.ka25-stat b{display:block;color:#c6f9e6;font-size:clamp(17px,4.9vw,24px);font-weight:950;font-variant-numeric:tabular-nums}
+.ka25-stat small{display:block;margin-top:3px;font-size:10px;color:#b6d4d6;line-height:1.25}
+.ka25-active{font-size:12px;font-weight:800;color:#bceadd;line-height:1.5}
+.ka25-rows{display:grid;gap:7px;margin-top:8px}
+.ka25-row{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#071d2bd1;border:1px solid #2b6075;border-radius:8px;padding:9px 10px;color:#e9f8ff;font-size:12px}
+.ka25-row b{color:#a3f6e3;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ka25-row span{flex:1;min-width:0;overflow-wrap:anywhere}
+.ka25-sharebox{border:1px solid #375f7a;background:#061726;border-radius:10px;padding:12px;white-space:pre-line;font-size:12px;color:#e9f6fa;line-height:1.55;margin:10px 0}
+.ka25-sharelink{color:#9be4ff!important;overflow-wrap:anywhere}
+.ka25-mobilebadge{display:inline-flex;gap:5px;align-items:center;font-size:11px;color:#bde9dd}
+/* MK XXV Test 2: previous successful GPS fix, intentionally separate from current fix */
+.ka25-lastknown{margin-top:15px;padding:14px;border:1px solid #567283;background:linear-gradient(130deg,#12293c,#0a1b2e);border-radius:13px;color:#e8f6ff}
+.ka25-lastknown h4{font-size:14px;color:#e4faff;margin:0 0 9px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ka25-lastknown .ka25-last-badge{font-size:10px;font-weight:900;letter-spacing:1px;color:#ffcc85;border:1px solid #b587477a;border-radius:20px;padding:3px 7px;background:#54330a48}
+.ka25-last-text{padding:11px;background:#041525;border:1px solid #4d738071;border-radius:10px;white-space:pre-line;overflow-wrap:anywhere;line-height:1.6;font-size:12px;color:#daeff8;margin-bottom:10px}
+.ka25-last-warning{margin:8px 0 12px;font-size:12px;line-height:1.55;color:#ffd5a4;font-weight:750}
+.ka25-lastknown button:disabled{opacity:.45;cursor:not-allowed}
+body.ka-solaris .ka25-lastknown{background:linear-gradient(115deg,#f3f8fb,#e8f1f6);border-color:#9cb9c7;color:#203f51}
+body.ka-solaris .ka25-lastknown h4{color:#1a3a4b}
+body.ka-solaris .ka25-last-text{background:#fff;color:#183c4b;border-color:#bacdd9}
+body.ka-solaris .ka25-last-warning{color:#864509}
+body.ka-solaris .ka25-last-badge{color:#955000;background:#fff3db}
+body.ka-solaris .ka25-summary{background:linear-gradient(120deg,#e1f4e9,#d5edf4);border-color:#a3c6ba;color:#163e35}
+body.ka-solaris .ka25-kicker{color:#1e6651}
+body.ka-solaris .ka25-stat{background:#f8ffffbd;border-color:#9bc5b6}
+body.ka-solaris .ka25-stat b{color:#0b574a}
+body.ka-solaris .ka25-stat small,body.ka-solaris .ka25-active{color:#275749}
+@media(max-width:350px){.ka25-stats{gap:5px}.ka25-stat{padding:8px 5px}.ka25-stat b{font-size:16px}}
+
 /* MK XXIII: navigation labels + accessible self-contained Explorer's Guide */
 .nav button small{display:block;font-size:inherit;line-height:1.08;font-weight:inherit;letter-spacing:-.1px;overflow-wrap:anywhere}
 .nav button[data-tab="mission"] small{font-size:8.2px;line-height:1.04}
@@ -1473,6 +1508,7 @@ body.ka-solaris .ka24-more-close{background:#e7f4fa;border-color:#b3cddd;color:#
   <div class="ka-solaris-banner" aria-hidden="true"><div><span>☀️</span><b>SOLARIS<span class="ka-solaris-suffix"> ORBITAL COMMAND</span></b></div><small>TITANIUM EXPLORATION BRIDGE // DAYLIGHT MODE: NOMINAL</small><i class="ka-solaris-line"></i></div>
   <div class="ka-solaris-viewport" aria-hidden="true"><div class="ka-solaris-viewport-text">EXPLORE<br>DISCOVER<br>LOG<br>BEYOND<span>ORBITAL VISUAL LINK · ACTIVE</span></div></div>
   <div class="ka22-opening" aria-label="Adventure clock and quick essentials"><span>🕒 <b id="ka22MiniClock">--:--:--</b> <small id="ka22Today">Local time</small> <small id="ka22Greeting">Adventure HQ ready</small></span><button type="button" class="ka22-entry-mini" data-ka22-open>🧭 ESSENTIALS</button></div>
+  <div id="ka25MiniMiles" class="ka25-mobilebadge" style="padding:0 10px 7px">🥾 Tracked miles: — (GPS recording required)</div>
   <button type="button" class="ka23-guide-banner" data-ka23-guide-open aria-haspopup="dialog"><span class="ka23-guide-banner-icon">❓</span><span><strong>HOW TO USE THIS APP</strong><small>Easy instructions, step by step • All features explained</small></span><b>OPEN GUIDE ›</b></button>
   <div class="topline" style="padding:0 1px 10px"><span id="connection" class="statusline">● LOCAL TEST MODE</span><span id="who" class="tiny">Explorer: Allan</span></div>
   <div class="mkii-statusbar" aria-hidden="true"><span>◈ SENSOR ARRAY // MK XVIII</span><span>BRIDGE <em>READY</em></span></div>
@@ -1633,12 +1669,13 @@ const topics=[
   'Awards unlock automatically when your event totals reach the targets shown on the page.',
   'Examples include Waterfall Hunter, Cow Whisperers, Ruin Explorers and Monster Procurement Division.',
   'You can check your progress at any time — awards use recorded incidents from your adventures.' ]},
- {id:'essentials',name:'🧭 Essentials — toilets, food, car/bike and daylight',tab:null,lines:[
+ {id:'essentials',name:'🧭 Essentials — miles, parked car/bike and location sharing',tab:null,lines:[
   'Tap the <strong>🧭 ESSENTIALS</strong> button beside the Adventure Clock near the top of the app.',
   'Use shortcuts for nearby toilets, food, coffee, fuel, parking and pharmacies. These open external Google Maps searches; listings and opening hours must still be checked.',
-  'Use <strong>Find My Bike</strong> to save a parking pin, or the trailhead button to save the start of a walk. Both pins are stored on <strong>your own phone</strong>, not shared to Lady Kim’s.',
+  'Use <strong>Find My Car</strong> or <strong>Find My Bike</strong> to save separate parking pins, or save a trailhead before walking. Pins are stored on <strong>your own phone</strong>, not shared to Lady Kim’s.',
   'The <strong>Adventure Clock</strong> uses your phone time. The mission timer uses the mission start time. Sunrise/sunset requires available location and forecast data.',
-  'Emergency GPS shows coordinates you can copy; it is not an emergency call service. A dedicated Find My Car label is planned, but is not in this version.' ]},
+  'The <strong>Miles Explored</strong> panel adds up routes saved using the existing GPS Flight Recorder; no GPS record means no calculated miles. The current unsaved recording is displayed separately. Start recording under Destination &amp; Scanners.',
+  'Emergency GPS lets you get a fresh position and share the coordinates, time, accuracy and Maps link with someone you trust. Every successful Essentials GPS request also saves a <strong>Last Known Location</strong> on that phone. It can be copied or shared after reopening, with a clear OLD / NOT LIVE warning and confirmation before sharing. You can delete it separately from car and bike pins. This is <strong>one location</strong>, not real-time sharing or an emergency calling service. Call 999 or 112 in emergencies.' ]},
  {id:'settings',name:'⚙️ Setup, themes, privacy and sharing',tab:null,lines:[
   'Use the <strong>Setup</strong> button at the top to manage the account, explorer identity, sound, voice and other options.',
   'Four themes are available: <strong>Classic, Starship, Nexus 3000 and Solaris</strong>. Themes are a display preference on each phone.',
@@ -2664,6 +2701,23 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')kaEndRedAlert()});
 let ka17LastDisplayedEnergy=null;
 setInterval(()=>{if(tab!=='mission'||modalOpen||!active()||document.hidden)return;const value=ka17Energy(active());if(ka17LastDisplayedEnergy!==value){ka17LastDisplayedEnergy=value;render()}},60000);
 
+window.ka25GetDistanceData=()=>{
+ const routeStats=[];
+ for(const mission of (Array.isArray(state?.missions)?state.missions:[])){
+  const tracks=Array.isArray(mission?.tracks)?mission.tracks:[];
+  let totalMeters=0,recordings=0;
+  for(const t of tracks){
+   if(!Array.isArray(t?.points)||t.points.length<2)continue;
+   const metres=ka14RouteDistance(t.points);
+   if(Number.isFinite(metres)&&metres>=0){totalMeters+=metres;recordings++}
+  }
+  if(recordings)routeStats.push({id:String(mission.id),name:String(mission.name||'Adventure'),metres:totalMeters,recordings,start:Number(mission.start)||0});
+ }
+ const current=active();
+ const draft=ka14Draft&&current&&ka14Draft.missionId===current.id&&Array.isArray(ka14Draft.points)?
+  {metres:ka14RouteDistance(ka14Draft.points),points:ka14Draft.points.length,status:ka14Draft.status}:null;
+ return {missions:routeStats,draft,activeId:current?.id||null};
+};
 window.ka22MissionMeta=()=>{const m=active();return m?{name:m.name,start:m.start,actor}:null};
 initializeShared();
 </script>
@@ -2672,9 +2726,21 @@ initializeShared();
   <div class="ka22-sheet" id="ka22Sheet">
     <div class="ka22-titlebar"><div><h2 id="ka22Heading">🧭 Expedition Essentials</h2><p>KimAllan Adventures · Your field toolkit</p></div><button type="button" class="ka22-close" id="ka22Close" aria-label="Close Essentials">✕ CLOSE</button></div>
     <div class="ka22-clockline"><div><label>Adventure Clock</label><strong id="ka22Clock">--:--:--</strong><small id="ka22Day">Date</small></div><div><label>Mission Elapsed</label><strong id="ka22MissionTime">00:00:00</strong><small id="ka22MissionStatus">No active mission</small></div></div>
+    <div class="ka25-summary" id="ka25DistancePanel">
+      <div class="ka25-kicker">◈ MILES EXPLORED · RECORDED GPS ROUTES</div>
+      <div class="ka25-stats"><div class="ka25-stat"><b id="ka25AllMiles">0.00</b><small>Total saved miles</small></div><div class="ka25-stat"><b id="ka25ThisMiles">0.00</b><small>Current mission</small></div><div class="ka25-stat"><b id="ka25RouteCount">0</b><small>Saved routes</small></div></div>
+      <p class="ka25-active" id="ka25TrackingState">Checking saved expedition routes…</p>
+      <p class="ka22-muted">Miles are estimated from GPS Flight Recorder tracks you chose to save. No tracking starts automatically. Unsaved miles aren't included in the all-time total.</p>
+      <div class="ka25-rows" id="ka25MissionRows" aria-label="Distance for each recorded adventure"></div>
+      <div class="ka22-actions"><button type="button" class="ka22-button primary" id="ka25OpenRecorder">📍 Open GPS Recorder</button><button type="button" class="ka22-button" id="ka25RefreshMiles">↻ Refresh Miles</button></div>
+    </div>
     <div class="ka22-section"><h3>📍 Nearby Places</h3><p>One tap opens a nearby search in Google Maps. Listings, opening hours and availability are provided by Google Maps, not verified by this app.</p>
       <div class="ka22-grid"><button type="button" class="ka22-button" data-ka22-search="public toilets">🚻 Toilets</button><button type="button" class="ka22-button" data-ka22-search="restaurants">🍽️ Food</button><button type="button" class="ka22-button" data-ka22-search="cafes">☕ Coffee</button><button type="button" class="ka22-button" data-ka22-search="petrol stations">⛽ Fuel</button><button type="button" class="ka22-button" data-ka22-search="parking">🅿️ Parking</button><button type="button" class="ka22-button" data-ka22-search="pharmacies">💊 Pharmacy</button></div>
       <p class="ka22-muted">Google Maps opens separately. If the app has GPS permission, searches can include your current coordinates; otherwise Google Maps can locate you.</p>
+    </div>
+    <div class="ka22-section"><h3>🚗 Find My Parked Car</h3><p>Park up, save your current GPS position and return using walking directions. Stored on <strong>this phone only</strong>. Save bike and car locations independently.</p>
+      <div class="ka22-actions"><button type="button" class="ka22-button primary" id="ka25SaveCar">📍 Save Car Here</button><button type="button" class="ka22-button" id="ka25CarDirections">🚶 Walk To Car</button></div>
+      <div class="ka22-details" id="ka25CarInfo">No car location saved yet.</div><button type="button" class="ka22-button warn" id="ka25ClearCar">✕ Clear Car Pin</button>
     </div>
     <div class="ka22-section"><h3>🏍️ Find My Bike</h3><p>Save the location where you parked, then get walking directions back. Your parking pin is saved <strong>only on this phone</strong>, never to Firebase.</p>
       <div class="ka22-actions"><button type="button" class="ka22-button primary" id="ka22SaveBike">📍 Save Bike Here</button><button type="button" class="ka22-button" id="ka22BikeDirections">🚶 Walk To Bike</button></div>
@@ -2688,8 +2754,19 @@ initializeShared();
       <button type="button" class="ka22-button" id="ka22RefreshDay">🌤️ Check Daylight</button><p class="ka22-attribution">Sunrise and sunset via Open-Meteo, when online. Estimates are not a guarantee of usable light in valleys or woodland.</p>
     </div>
     <div class="ka22-section"><h3>🆘 Emergency Position</h3><p>Shows your coordinates so you can communicate your location. Always use the appropriate emergency services when needed.</p>
-      <div class="ka22-actions"><button type="button" class="ka22-button primary" id="ka22Locate">📡 Get My Location</button><button type="button" class="ka22-button" id="ka22CopyCoords">📋 Copy Coordinates</button></div>
-      <div id="ka22Coords" class="ka22-details">Location not yet requested.</div><p class="ka22-muted">Accuracy depends on your phone's GPS reception. GPS can be unreliable indoors and in steep terrain.</p>
+      <div class="ka22-actions"><button type="button" class="ka22-button primary" id="ka22Locate">📡 Get CURRENT Location</button><button type="button" class="ka22-button" id="ka22CopyCoords">📋 Copy CURRENT Coordinates</button></div>
+      <div id="ka22Coords" class="ka22-details">No current location requested in this session.</div>
+      <div class="ka25-sharebox" id="ka25SharePreview">For an up-to-date position, tap Get CURRENT Location. It never starts automatic tracking.</div>
+      <button type="button" class="ka22-button primary" id="ka25ShareLocation" disabled style="width:100%">📤 Share CURRENT Position</button>
+      <div class="ka25-lastknown" aria-labelledby="ka25LastKnownTitle">
+        <h4 id="ka25LastKnownTitle">📍 Last Known Location <span id="ka25LastBadge" class="ka25-last-badge">NO SAVED FIX</span></h4>
+        <p class="ka22-muted">Saved automatically <strong>on this phone only</strong> after a successful location request in Expedition Essentials. Still available after reopening the app. Not continuous tracking.</p>
+        <div id="ka25LastInfo" class="ka25-last-text" aria-live="polite">No previous GPS position saved yet.</div>
+        <p class="ka25-last-warning" id="ka25LastWarning">A last known position may be out of date. Always try Get CURRENT Location first.</p>
+        <div class="ka22-actions"><button type="button" class="ka22-button" id="ka25CopyLast" disabled>📋 Copy LAST Known</button><button type="button" class="ka22-button" id="ka25ShareLast" disabled>📤 Share LAST Known</button></div>
+        <button type="button" class="ka22-button warn" id="ka25ClearLast" disabled>✕ Delete Saved Position</button>
+      </div>
+      <p class="ka22-muted">Shares <strong>one recorded GPS fix</strong>, never live tracking. Every message includes capture time and reported accuracy. Sending needs signal; for a real emergency call <strong>999 or 112</strong>. This is not a rescue service.</p>
     </div>
     <p class="ka22-status" id="ka22Status" aria-live="polite">Ready when you are, Allan and Lady Kim. 🚨 RED ALERT remains operational.</p>
   </div>
@@ -2705,15 +2782,42 @@ initializeShared();
   const searches={ 'public toilets':'public toilets',restaurants:'restaurants',cafes:'cafes','petrol stations':'petrol stations',parking:'parking',pharmacies:'pharmacies'};
   let local={};try{local=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){}
   let lastFix=null,daylight=null,daylightFor='',working=false,previousFocus=null;
+  // No Firebase writes: previous GPS is retained only in this browser's localStorage.
+  function validFix(p){return p&&Number.isFinite(p.lat)&&Math.abs(p.lat)<=90&&Number.isFinite(p.lon)&&Math.abs(p.lon)<=180&&Number.isFinite(p.accuracy)&&p.accuracy>=0&&Number.isFinite(p.at)&&p.at>0&&p.at<=Date.now()+60000}
+  let savedFix=validFix(local.lastKnown)?local.lastKnown:null;
   function safeStore(){try{localStorage.setItem(KEY,JSON.stringify(local))}catch(e){status('Local storage unavailable. The pin may not survive closing the app.')}}
   function status(s){$('ka22Status').textContent=s}
   function coord(p){return Number(p.lat).toFixed(6)+', '+Number(p.lon).toFixed(6)}
-  function stamp(t){return new Date(t).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}
+  function stamp(t){return new Date(t).toLocaleString('en-GB',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'})}
+  function ago(t){const minutes=Math.max(0,Math.floor((Date.now()-t)/60000));if(minutes<1)return 'less than a minute';if(minutes<60)return minutes+' minute'+(minutes===1?'':'s');const hours=Math.floor(minutes/60);if(hours<24)return hours+' hour'+(hours===1?'':'s')+' '+(minutes%60)+' min';const days=Math.floor(hours/24);return days+' day'+(days===1?'':'s')}
+  function updateSavedFix(){
+    const p=savedFix;
+    $('ka25CopyLast').disabled=!p;$('ka25ShareLast').disabled=!p;$('ka25ClearLast').disabled=!p;
+    $('ka25LastBadge').textContent=p?'SAVED · NOT LIVE':'NO SAVED FIX';
+    $('ka25LastInfo').textContent=p?coord(p)+'\nRecorded: '+stamp(p.at)+' (phone local time)\nAge: '+ago(p.at)+'\nReported accuracy: ±'+Math.round(p.accuracy)+' m':'No previous GPS fix saved on this phone. Tap Get CURRENT Location to save one.';
+    $('ka25LastWarning').textContent=p?'⚠️ SAVED POSITION — NOT YOUR LIVE LOCATION. Recorded '+ago(p.at)+' ago. Always check its timestamp, particularly if you have moved.':'A last known position may be out of date. Always try Get CURRENT Location first.';
+  }
+  function rememberFix(p){if(!validFix(p))return;savedFix=p;local.lastKnown={lat:p.lat,lon:p.lon,accuracy:p.accuracy,at:p.at};safeStore();updateSavedFix()}
+  function clearLastKnown(){if(!savedFix)return;if(!confirm('Delete your saved Last Known Location from this phone? Your parked car/bike and trailhead pins will stay saved.'))return;savedFix=null;delete local.lastKnown;safeStore();updateSavedFix();status('Saved previous location deleted from this phone.')}
+  async function shareText(title,text){
+    if(typeof navigator.share==='function'){
+      try{await navigator.share({title,text});status('Location sent to your phone’s share menu.');return}
+      catch(e){if(e?.name==='AbortError')return}
+    }
+    try{await navigator.clipboard.writeText(text);status('📋 Location message copied. Paste it into WhatsApp or a text message to send.')}
+    catch(e){status('⚠️ Sharing unavailable. Coordinates remain visible for manual copying.')}
+  }
+  async function copyLastKnown(){if(!savedFix)return status('No previously saved position yet.');try{await navigator.clipboard.writeText(ka25Message(savedFix,'LAST KNOWN / NOT LIVE'));status('📋 LAST KNOWN coordinates, time and accuracy copied. NOT a live fix.')}catch(e){status('Copy unavailable. The saved coordinates are shown above.')}}
+  async function shareLastKnown(){
+    if(!savedFix)return status('No previously saved position to share.');
+    if(!confirm('⚠️ SHARE A SAVED / POSSIBLY OLD LOCATION?\n\nRecorded: '+stamp(savedFix.at)+'\nAge: '+ago(savedFix.at)+'\nAccuracy: ±'+Math.round(savedFix.accuracy)+' m\n\nThis is NOT your current/live location. For a recent fix, cancel and tap Get CURRENT Location.'))return;
+    await shareText('KimAllan Adventures — LAST KNOWN location',ka25Message(savedFix,'LAST KNOWN / NOT LIVE'));
+  }
   function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
   function savedInfo(key,infoId,empty){
     const p=local[key];$(infoId).textContent=p?coord(p)+' · accuracy approx ±'+Math.round(p.accuracy||0)+' m\nSaved '+stamp(p.at):empty;
   }
-  function refreshStored(){savedInfo('bike','ka22BikeInfo','No bike location saved yet.');savedInfo('start','ka22StartInfo','No starting point saved.')}
+  function refreshStored(){savedInfo('bike','ka22BikeInfo','No bike location saved yet.');savedInfo('car','ka25CarInfo','No car location saved yet.');savedInfo('start','ka22StartInfo','No starting point saved.')}
   function getMeta(){try{return typeof window.ka22MissionMeta==='function'?window.ka22MissionMeta():null}catch(e){return null}}
   function tick(){
     const now=new Date();const hhmmss=now.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
@@ -2732,18 +2836,18 @@ initializeShared();
       $('ka22Sunset').textContent='Sunrise '+daylight.rise.slice(11,16)+' · Sunset '+daylight.set.slice(11,16)+' (destination-local estimate). '+text+'.';
     }
   }
-  function open(){previousFocus=document.activeElement;panel.hidden=false;document.body.style.overflow='hidden';refreshStored();tick();$('ka22Close').focus();}
+  function open(){previousFocus=document.activeElement;panel.hidden=false;document.body.style.overflow='hidden';refreshStored();updateSavedFix();tick();ka25RefreshMiles();$('ka22Close').focus();}
   function close(){panel.hidden=true;document.body.style.overflow='';if(previousFocus?.focus)previousFocus.focus()}
   async function gps(){
     if(!navigator.geolocation)throw Error('Location is not supported by this browser.');
     if(!window.isSecureContext)throw Error('GPS requires the live HTTPS app. Local HTML tests may not allow location.');
     return new Promise((resolve,reject)=>{
-      navigator.geolocation.getCurrentPosition(p=>{const c={lat:p.coords.latitude,lon:p.coords.longitude,accuracy:p.coords.accuracy,at:Date.now()};lastFix=c;resolve(c)},
+      navigator.geolocation.getCurrentPosition(p=>{const c={lat:p.coords.latitude,lon:p.coords.longitude,accuracy:p.coords.accuracy,at:Date.now()};if(!validFix(c)){reject(Error('GPS returned an invalid position.'));return;}lastFix=c;rememberFix(c);resolve(c)},
         err=>reject(Error(err.code===1?'Location permission denied. You can enable it in browser settings.':err.code===2?'Location unavailable. Try outside with a clearer view of the sky.':'Location timed out. Try again outdoors.')),
         {enableHighAccuracy:true,timeout:15000,maximumAge:10000});
     });
   }
-  async function getGPS(action){if(working)return null;working=true;status('📍 Requesting phone location…');try{const p=await gps();status('📍 Location acquired · accuracy ±'+Math.round(p.accuracy)+' m');$('ka22Coords').textContent=coord(p)+'\nAccuracy approx ±'+Math.round(p.accuracy)+' m';return p}catch(e){status('⚠️ '+e.message);return null}finally{working=false}}
+  async function getGPS(action){if(working)return null;working=true;status('📍 Requesting phone location…');try{const p=await gps();status('📍 Location acquired · accuracy ±'+Math.round(p.accuracy)+' m');$('ka22Coords').textContent=coord(p)+'\nAccuracy approx ±'+Math.round(p.accuracy)+' m';ka25UpdateShare(p);return p}catch(e){status('⚠️ '+e.message);return null}finally{working=false}}
   function mapUrl(query,p){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p?query+' near '+coord(p):query+' near me')}
   function directions(p){return 'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(coord(p).replace(' ',''))+'&travelmode=walking'}
   function openMap(url){window.open(url,'_blank','noopener,noreferrer')}
@@ -2752,9 +2856,11 @@ initializeShared();
     const p=lastFix&&Date.now()-lastFix.at<5*60*1000?lastFix:null;
     openMap(mapUrl(searches[q],p));status('Opening nearby '+q+' in Google Maps. Results and hours are provided by Maps.');
   }
-  async function savePin(kind){const p=await getGPS();if(!p)return;local[kind]=p;safeStore();refreshStored();status('✅ '+(kind==='bike'?'Bike':'Starting point')+' saved on this phone only.');}
-  function goPin(kind){const p=local[kind];if(!p)return status('Save a '+(kind==='bike'?'bike location':'starting point')+' first.');openMap(directions(p));status('Opening walking directions to your saved '+(kind==='bike'?'bike':'starting point')+'.');}
-  function clearPin(kind){if(!local[kind])return status('No saved pin to clear.');if(!confirm('Remove saved '+(kind==='bike'?'bike':'starting point')+' location from this phone?'))return;delete local[kind];safeStore();refreshStored();status('Saved pin cleared.');}
+  async function savePin(kind){const p=await getGPS();if(!p)return;
+    if(p.accuracy>100&&!confirm('GPS accuracy is only about ±'+Math.round(p.accuracy)+' metres. This may not be precise enough to find your parked vehicle or starting point. Save anyway?'))return;
+    local[kind]=p;safeStore();refreshStored();status('✅ '+(kind==='bike'?'Bike':kind==='car'?'Car':'Starting point')+' saved on this phone only.');}
+  function goPin(kind){const p=local[kind];if(!p)return status('Save a '+(kind==='bike'?'bike location':kind==='car'?'car location':'starting point')+' first.');openMap(directions(p));status('Opening walking directions to your saved '+(kind==='bike'?'bike':kind==='car'?'car':'starting point')+'.');}
+  function clearPin(kind){if(!local[kind])return status('No saved pin to clear.');if(!confirm('Remove saved '+(kind==='bike'?'bike':kind==='car'?'car':'starting point')+' location from this phone?'))return;delete local[kind];safeStore();refreshStored();status('Saved pin cleared.');}
   async function copyCoords(){if(!lastFix)return status('Get your location first.');try{await navigator.clipboard.writeText(coord(lastFix));status('📋 Coordinates copied.')}catch(e){status('Copy was blocked. Coordinates shown above for manual copying.')}}
   async function sun(){const p=await getGPS();if(!p)return;
     const lat=p.lat.toFixed(4),lon=p.lon.toFixed(4);
@@ -2766,6 +2872,60 @@ initializeShared();
       if(!rise||!set)throw Error('No daylight estimate returned');daylight={rise,set};daylightFor=lat+','+lon;tick();status('☀️ Daylight estimate updated for your current location.');
     }catch(e){$('ka22Sunset').textContent='Sunset data unavailable. Check your phone connection and location.';status('⚠️ Cannot retrieve daylight estimate at the moment. Clock and saved pins still work.')}
   }
+  // MK XXV: distances from existing saved Mission GPS tracks; no background tracking or Firebase mutations.
+  const KM_TO_MILES=1/1609.344;
+  function miles(metres){const n=Number(metres);return Number.isFinite(n)&&n>=0?(n*KM_TO_MILES).toFixed(2):'0.00'}
+  function ka25Escape(v){return escapeHtml(String(v??''))}
+  function ka25Read(){try{const v=window.ka25GetDistanceData?.();return v&&Array.isArray(v.missions)?v:null}catch(e){return null}}
+  function ka25RefreshMiles(){
+    const summary=ka25Read();
+    const all=summary?.missions||[];
+    const total=all.reduce((sum,m)=>sum+(Number(m.metres)||0),0);
+    const routes=all.reduce((sum,m)=>sum+(Number(m.recordings)||0),0);
+    const active=all.find(m=>m.id===summary?.activeId);
+    const activeSaved=Number(active?.metres)||0;
+    const draftMeters=Number(summary?.draft?.metres)||0;
+    $('ka25AllMiles').textContent=miles(total);
+    $('ka25ThisMiles').textContent=miles(activeSaved+draftMeters);
+    $('ka25RouteCount').textContent=String(routes);
+    $('ka25MiniMiles').textContent='🥾 '+miles(total)+' miles saved · '+routes+' route'+(routes===1?'':'s')+(summary?.draft?' · 📍 '+miles(draftMeters)+' mi unsaved':'');
+    $('ka25TrackingState').textContent=summary?.draft?
+      ((summary.draft.status==='recording'?'🔴 Recording':'⏸️ Paused')+' · '+miles(draftMeters)+' mi unsaved on this phone · '+summary.draft.points+' GPS fixes'):
+      (routes?'📼 Saved GPS history loaded from your shared adventures.':'No saved GPS routes yet. Start GPS tracking in Destination & Scanners.');
+    const rows=$('ka25MissionRows');
+    if(!rows)return;
+    const ordered=all.slice().sort((a,b)=>(b.start||0)-(a.start||0));
+    rows.innerHTML=ordered.length?ordered.slice(0,12).map(m=>'<div class="ka25-row"><span>'+ka25Escape(m.name)+'</span><b>'+miles(m.metres)+' mi · '+m.recordings+' route'+(m.recordings===1?'':'s')+'</b></div>').join(''):
+      '<div class="ka22-muted">Your recorded adventures will appear here once you stop and save a GPS route.</div>';
+    if(ordered.length>12)rows.insertAdjacentHTML('beforeend','<p class="ka22-muted">Showing the latest 12 adventures. All routes are included in the total.</p>');
+  }
+  function ka25OpenRecorder(){
+    close();
+    const tab=document.querySelector('#nav button[data-tab="scanner"]');
+    if(!tab){status('Open Destination & Scanners to start tracking.');return}
+    tab.click();
+    setTimeout(()=>document.getElementById('ka14Tracker')?.scrollIntoView({block:'start',behavior:'smooth'}),80);
+  }
+  function ka25Message(p,type='CURRENT SESSION'){
+    const ageText=new Date(p.at).toLocaleString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'});
+    const link='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(coord(p).replace(' ',''));
+    return (type==='LAST KNOWN / NOT LIVE'?'⚠️ LAST KNOWN LOCATION — MAY BE OLD, NOT CURRENT OR LIVE':'CURRENT SESSION GPS POSITION — one fix, NOT live tracking')+'\n'+coord(p)+'\nRecorded: '+ageText+' (phone local time)\nAge at sharing: '+ago(p.at)+'\nGPS accuracy: approx ±'+Math.round(p.accuracy)+' metres\nMap: '+link;
+  }
+  function ka25UpdateShare(p){
+    const text=ka25Message(p);
+    $('ka25SharePreview').textContent=text;
+    $('ka25ShareLocation').disabled=false;
+    $('ka25ShareLocation').textContent='📤 Share CURRENT Position';
+  }
+  async function ka25SharePosition(){
+    if(!lastFix){status('First tap Get My Location, then share that recorded position.');return}
+    const age=Date.now()-Number(lastFix.at);
+    if(age>15*60*1000){
+      if(!confirm('Your last location was recorded over 15 minutes ago. Share this OLD location anyway? Better: tap Get My Location first.'))return;
+    }
+    await shareText('KimAllan Adventures — Current session GPS position',ka25Message(lastFix));
+  }
+
   document.querySelectorAll('[data-ka22-open]').forEach(b=>b.addEventListener('click',open));
   $('ka22Close').addEventListener('click',close);
   panel.addEventListener('click',e=>{if(e.target===panel)close()});
@@ -2773,6 +2933,15 @@ initializeShared();
   panel.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const f=[...panel.querySelectorAll('button:not([disabled])')];if(!f.length)return;const first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){last.focus();e.preventDefault()}else if(!e.shiftKey&&document.activeElement===last){first.focus();e.preventDefault()}});
   panel.querySelectorAll('[data-ka22-search]').forEach(b=>b.addEventListener('click',()=>near(b.dataset.ka22Search)));
   $('ka22SaveBike').addEventListener('click',()=>savePin('bike'));
+  $('ka25SaveCar').addEventListener('click',()=>savePin('car'));
+  $('ka25CarDirections').addEventListener('click',()=>goPin('car'));
+  $('ka25ClearCar').addEventListener('click',()=>clearPin('car'));
+  $('ka25RefreshMiles').addEventListener('click',ka25RefreshMiles);
+  $('ka25OpenRecorder').addEventListener('click',ka25OpenRecorder);
+  $('ka25ShareLocation').addEventListener('click',ka25SharePosition);
+  $('ka25CopyLast').addEventListener('click',copyLastKnown);
+  $('ka25ShareLast').addEventListener('click',shareLastKnown);
+  $('ka25ClearLast').addEventListener('click',clearLastKnown);
   $('ka22BikeDirections').addEventListener('click',()=>goPin('bike'));
   $('ka22ClearBike').addEventListener('click',()=>clearPin('bike'));
   $('ka22SaveStart').addEventListener('click',()=>savePin('start'));
@@ -2781,7 +2950,7 @@ initializeShared();
   $('ka22CopyCoords').addEventListener('click',copyCoords);
   $('ka22Locate').addEventListener('click',()=>getGPS());
   $('ka22RefreshDay').addEventListener('click',sun);
-  refreshStored();tick();setInterval(tick,1000);
+  refreshStored();updateSavedFix();tick();ka25RefreshMiles();setInterval(tick,1000);setInterval(()=>{if(!document.hidden)ka25RefreshMiles()},10000);setInterval(()=>{if(!document.hidden&&!panel.hidden)updateSavedFix()},60000);
 })();
 </script>
 
