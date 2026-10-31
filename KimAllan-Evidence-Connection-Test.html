@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KimAllan · Evidence Locker Connection Test</title><style>body{background:#071423;color:#e9f9ff;font:16px system-ui;margin:0;padding:20px}main{max-width:580px;margin:auto}section{border:1px solid #39718b;border-radius:14px;padding:18px;background:#10283b}h1{font-size:25px}button{background:#197c93;color:white;border:0;border-radius:9px;padding:13px;font-weight:750;margin:8px 0}pre{white-space:pre-wrap;word-break:break-word;background:#06101c;padding:12px;border-radius:8px;min-height:85px}small{color:#b6d2db}input{max-width:100%}</style></head><body><main><h1>📸 Evidence Locker · Connection Test</h1><section><p>This is a <b>separate diagnostic page</b>. It does not change the live KimAllan app or your Supabase policies.</p><p><b>Step 1:</b> Choose a harmless test picture (not a personal photo).</p><input type="file" id="photo" accept="image/*"><p><button id="test">TEST UPLOAD</button></p><small>Uploads to the existing private bucket <b>Kimallan-evidence</b>. This test uses only the publishable key, so a permission failure is expected if your bucket requires an authenticated Supabase user. It does not sign you in through Firebase.</small><h3>Exact result</h3><pre id="out">Waiting for test…</pre></section></main><script>
+const url='https://zgaujdhwjcgezieqlpyj.supabase.co';
+const key='sb_publishable_GRM6N8GNqajyqnF8lys20w_MsfsevWk';
+const bucket='Kimallan-evidence';
+const output=document.querySelector('#out');
+document.querySelector('#test').onclick=async()=>{
+ const file=document.querySelector('#photo').files[0];if(!file){output.textContent='Choose a test image first.';return}
+ if(!file.type.startsWith('image/')){output.textContent='Choose an image file.';return}
+ if(file.size>5*1024*1024){output.textContent='Choose an image smaller than 5 MB for this test.';return}
+ const name='connection-test/'+Date.now()+'-'+Math.random().toString(36).slice(2,10)+'.'+(file.type.split('/')[1]||'jpg').replace(/[^a-z0-9]/gi,'');
+ output.textContent='Sending test upload…';
+ try{const res=await fetch(`${url}/storage/v1/object/${encodeURIComponent(bucket)}/${name}`,{method:'POST',headers:{'apikey':key,'Authorization':'Bearer '+key,'Content-Type':file.type,'x-upsert':'false'},body:file});const raw=await res.text();let detail;try{detail=JSON.parse(raw)}catch{detail=raw}output.textContent=JSON.stringify({httpStatus:res.status,ok:res.ok,storagePath:name,result:detail},null,2)+(res.ok?'\nUPLOAD ACCEPTED. Next: verify secure viewing and both users.':'\nUPLOAD FAILED. This is the actual response; no policy changes have been made.');}catch(e){output.textContent='NETWORK ERROR: '+e.message+'\nIf testing a downloaded file, try serving the page over HTTPS.'}
+};
+</script></body></html>
